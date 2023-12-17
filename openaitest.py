@@ -3,7 +3,7 @@ import os
 import openai
 
 
-openai.api_key = "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"
+openai.api_key = "Open-API-key"
 
 response = openai.Completion.create(
   model="text-davinci-003",
@@ -38,18 +38,4 @@ print(response)
   }
 }
 '''
-
-# import openai
-#
-# openai.api_key = "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"
-#
-# response = openai.ChatCompletion.create(
-#   model="gpt-3.5-turbo",
-#   messages=[
-#         {"role": "system", "content": "You are a helpful assistant."},
-#         {"role": "user", "content": "write email to ask for sick leave"}
-#     ]
-# )
-#
-# print(response['choices'][0]['message']['content'])
 
