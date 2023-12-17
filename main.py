@@ -12,7 +12,7 @@ chatStr = ""
 def chat(query):
     global chatStr
     # print(chatStr)  # Optional
-    openai.api_key = "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"
+    openai.api_key = "Open-API-key"
     chatStr += f"Anuraj: {query}\n Jarvis: "
     response = openai.Completion.create(
         model="text-davinci-003",
@@ -30,7 +30,7 @@ def chat(query):
 
 
 def ai(prompt):
-    openai.api_key = "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"
+    openai.api_key = "Open-API-key"
     text = f"OpenAI response for Prompt: {prompt} \n ********************\n\n"
 
     response = openai.Completion.create(
